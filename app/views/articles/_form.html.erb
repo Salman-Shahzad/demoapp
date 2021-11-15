@@ -21,6 +21,11 @@
                 <%=f.text_area :description,class: "form-control"%>
             </p>
 
+             <p>
+                <%=f.label :current_user%><br/>
+                <%=f.text_area :user_id, id: :article_user_id,value: current_user.id, class: "form-control"%>
+            </p>
+
             <p>
                 <%=f.submit class:"btn btn-success"%>
             </p>
